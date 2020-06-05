@@ -27,3 +27,10 @@ start = timeit.default_timer()
 #code
 end = timeit.default_timer() - start
 
+#convert characters with ticks like german characters with no ticks
+import unidecode
+>>> name = "Mesut Özil"
+>>> player = unidecode.unidecode(name)
+>>> player
+'Mesut Ozil'
+
