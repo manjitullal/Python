@@ -20,3 +20,10 @@ sname = ['karl-anthony-towns']
 name = [sname for sname in special_names if SequenceMatcher(None, name,sname).ratio()>0.5][0]
 >>> name
 'karl-anthony-towns'
+
+#one way to time your code
+import timeit
+start = timeit.default_timer()
+#code
+end = timeit.default_timer() - start
+
