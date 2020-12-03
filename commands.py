@@ -46,3 +46,4 @@ drive.mount('/content/drive')
 ! cp /content/drive/MyDrive/datasets/kaggle/kaggle.json ~/.kaggle/
 ! kaggle datasets download -d tmdb/tmdb-movie-metadata
 ! unzip tmdb-movie-metadata.zip -d tmdb-movie-metadata
+path = /content/tmdb-movie-metadata/
