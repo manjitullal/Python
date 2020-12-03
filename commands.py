@@ -34,3 +34,15 @@ import unidecode
 >>> player
 'Mesut Ozil'
 
+#load kaggle dataset
+#https://www.kaggle.com/general/74235
+
+#make sure that you have the kaggle.json file store in your colab before doing below
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+! mkdir ~/.kaggle
+! cp /content/drive/MyDrive/datasets/kaggle/kaggle.json ~/.kaggle/
+! kaggle datasets download -d tmdb/tmdb-movie-metadata
+! unzip tmdb-movie-metadata.zip -d tmdb-movie-metadata
